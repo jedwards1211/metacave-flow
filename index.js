@@ -35,9 +35,9 @@ export type Station = {
   isEntrance?: boolean,
   isAboveGround?: boolean,
   depth?: Distance,
-  lrud?: Array<Distance>,
+  lrud?: Array<?Distance>,
   lrudAzm?: Azimuth,
-  nsew?: Array<Distance>,
+  nsew?: Array<?Distance>,
   splays?: Array<SplayShot>,
 }
 
