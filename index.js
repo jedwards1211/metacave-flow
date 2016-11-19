@@ -13,7 +13,6 @@ export type Longitude = string
 
 export type Surveyor = {
   roles?: string | Array<string>,
-  [key: any]: mixed,
 }
 
 export type Surveyors = {
@@ -28,7 +27,6 @@ export type SplayShot = {
   azm?: Azimuth,
   inc?: Inclination,
   splayDepth?: Distance,
-  [key: any]: mixed,
 }
 
 export type Station = {
@@ -41,7 +39,6 @@ export type Station = {
   lrudAzm?: Azimuth,
   nsew?: Array<Distance>,
   splays?: Array<SplayShot>,
-  [key: any]: mixed,
 }
 
 export type ShotMeasurement = {
@@ -49,14 +46,12 @@ export type ShotMeasurement = {
   dist?: Distance,
   azm?: Azimuth,
   inc?: Inclination,
-  [key: any]: mixed,
 }
 
 export type Shot = {
   excludeDist?: boolean,
   dist?: 'auto',
   measurements?: Array<ShotMeasurement>,
-  [key: any]: mixed,
 }
 
 export type Survey = Array<Station | Shot>
@@ -80,14 +75,12 @@ export type Trip = {
   incFsCorrection?: Inclination,
   incBsCorrection?: Inclination,
   survey?: Survey,
-  [key: any]: mixed,
 }
 
 export type FixedStation = {
   lat: Latitude,
   long: Longitude,
   elev: Distance,
-  [key: any]: mixed,
 }
 
 export type FixedStations = {
@@ -95,13 +88,11 @@ export type FixedStations = {
   ellipsoid: 'WGS84',
   datum: 'WGS84',
   stations?: {[stationName: string]: FixedStation},
-  [key: any]: mixed,
 }
 
 export type Cave = {
   fixedStations?: Array<FixedStations>,
   trips?: Array<Trip>,
-  [key: any]: mixed,
 }
 
 export type Caves = {
@@ -110,5 +101,4 @@ export type Caves = {
 
 export type MetacaveData = {
   caves: Caves,
-  [key: any]: mixed,
 }
