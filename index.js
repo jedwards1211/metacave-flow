@@ -104,9 +104,11 @@ export type Cave = {
   [key: any]: mixed,
 }
 
+export type Caves = {
+  [caveName: string]: Cave,
+}
+
 export type MetacaveData = {
-  caves: {
-    [caveName: string]: Cave,
-  },
+  caves: Caves,
   [key: any]: mixed,
 }
