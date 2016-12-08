@@ -13,6 +13,6 @@
   "author": "Andy Edwards",
   "license": "MIT",
   "devDependencies": {
-    "flow-bin": "^0.35.0"
+    "flow-bin": "^0.36.0"
   }
 }
